@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<labwc_config>
+  <core><gap>0</gap><decoration>server</decoration></core>
+  <windowRules>
+    <windowRule identifier="*" serverDecoration="no">
+      <action name="ToggleFullscreen" />
+    </windowRule>
+  </windowRules>
+  <keyboard>
+    <keybind key="W-Return"><action name="Execute" command="tuxconsole" /></keybind>
+  </keyboard>
+</labwc_config>

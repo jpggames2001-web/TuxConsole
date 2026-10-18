@@ -1,0 +1,3 @@
+# Optional greeter access. Create this dedicated group and add only the greeter account.
+# Install only when gamepad login is needed; never add the greeter to the broad input group.
+SUBSYSTEM=="input", KERNEL=="event*", ENV{ID_INPUT_JOYSTICK}=="1", GROUP="tuxconsole-gamepad", MODE="0660", TAG+="uaccess"

@@ -1,0 +1,7 @@
+# Example only. Merge with existing /etc/greetd/config.toml; do not overwrite it blindly.
+[terminal]
+vt = 1
+
+[default_session]
+command = "dbus-run-session -- labwc -C /etc/tuxconsole/labwc -S /usr/local/libexec/tuxconsole-components"
+user = "greeter"

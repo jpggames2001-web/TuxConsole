@@ -1,0 +1,2 @@
+# Grant only local active seat users gamepad access; never chmod all /dev/input.
+SUBSYSTEM=="input", KERNEL=="event*", ENV{ID_INPUT_JOYSTICK}=="1", TAG+="uaccess"

@@ -1,0 +1,5 @@
+window { background: #101521; color: #f4f7ff; font-size: 22px; }
+button { background: #222e43; color: #f4f7ff; border: 3px solid transparent; border-radius: 16px; padding: 12px 20px; margin: 5px; }
+button:focus { border-color: #65e6ba; background: #33516a; box-shadow: 0 0 12px #65e6ba; }
+.title-1 { font-size: 36px; font-weight: bold; letter-spacing: 5px; }
+entry { font-size: 26px; padding: 15px; }

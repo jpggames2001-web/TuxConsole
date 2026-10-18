@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=TuxConsole
+Comment=Gamepad-first Wayland desktop
+Exec=/usr/local/bin/tuxconsole-session
+Type=Application
+DesktopNames=TuxConsole

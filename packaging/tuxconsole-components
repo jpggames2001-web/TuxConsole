@@ -1,0 +1,16 @@
+#!/bin/sh
+set -eu
+tuxconsole input-daemon &
+input_pid=$!
+tuxconsole window-daemon &
+windows_pid=$!
+shell_pid=
+cleanup() {
+    trap - EXIT INT TERM
+    kill "$input_pid" "$windows_pid" ${shell_pid:+"$shell_pid"} 2>/dev/null || true
+    wait "$input_pid" "$windows_pid" ${shell_pid:+"$shell_pid"} 2>/dev/null || true
+}
+trap cleanup EXIT INT TERM
+tuxconsole &
+shell_pid=$!
+wait "$shell_pid"
